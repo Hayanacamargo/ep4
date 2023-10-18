@@ -1,48 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <h1>questionario</h1>
-    <form>
-        <h3>aqui e uma questao</h3>
-      <input type="radio" name="resposta" value="correto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <p id="resultado_1"></p> 
+<header>
+    <h1></h1>    
+    <nav>
+        <ul>
+            <li><a href="#pizza doce">inicio</a></li>
+            <li><a href="pizzasalgada.html">uhffvhueghig</a></li>
+            <li><a href="comprar.html">Comprar</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+    </header>
+<main>
+<body onload="inclui_nome()">
 
-
-      <h3>aqui e uma questao</h3>
-      <input type="radio" name="resposta" value="correto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <p id="resultado_2"></p>
-
-
-      <h3>aqui e uma questao</h3>
-      <input type="radio" name="resposta" value="correto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <p id="resultado_3"></p>
-
-
-      <h3>aqui e uma questao</h3>
-      <input type="radio" name="resposta" value="correto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <p id="resultado_4"></p>
-
-      <h3>aqui e uma questao</h3>
-      <input type="radio" name="resposta" value="correto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <input type="radio" name="resposta" value="incorreto">qualquer coisa <br>
-      <p id="resultado_5"></p>
-      <button type="button" onclick="botaozinho_resposta()">verificar</button>
-      
-    </form>
     <script src="script.js"></script>
+
+    <p id="marcacao_nome"></p>
+
+    <form>
+        <h3>Questão 1</h3>
+        <input type="radio" name="quest_1" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
+
+        <h3>Questão 2</h3>
+        <input type="radio" name="quest_2" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p>
+
+        <h3>Questão 3</h3>
+        <input type="radio" name="quest_3" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br>
+
+        <h3>Questão 4</h3>
+        <input type="radio" name="quest_4" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p>
+
+        <p id="quantos_acertos"></p>
+            <button type="button" onclick="funcao_resposta()">Responder</button>
+    </form>
+    </main>
 </body>
 </html>

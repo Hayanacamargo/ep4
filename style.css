@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(243, 239, 239);
+    grid-gap: 5px;
+    display: grid;
+    grid-template-areas: 
+        "cab cab cab"
+        "sec pri pri"
+        "rod rod rod";
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto 1000px auto;
+}
+header{
+    background-image: linear-gradient(to right, rgb(131, 55, 55) , rgb(231, 170, 39));
+    display: flex;
+    padding: 1rem;
+    position: relative;
+}
+
+header{
+    grid-area: cab;
+}
+main{
+    grid-area: pri;
+}
+header{
+    display: flex;
+    height: 200px;
+}
+nav li{ /* aqui eu modifico apenas a lista de links */
+    display: inline; /* coloca os links do navegador em linha */
+    margin-left: 20px;
+}
+
+nav a{ /* aqui eu modifico apenas as palavras ancoradas */
+    text-decoration: none;/* tira a linha das palavras ancoradas */
+    font-size: 3.1 irem/* aumenta a letra da as palavras ancoradas */
+    color: red;
+    border: solid yellowgreen; /* coloco uma borda ao redor da palavra */
+    background: white; /* fundo do botaoo */
+    transition: 1s; /* tempo de trasicao */
+}
+nav a:hover{ /* aqui eu faco uma animacaozinha dos botoes */
+    font-size: 40px;/* aumenta a letra da as palavras ancoradas */
+    color: white; /* modifico a cor da letra */
+    border: solid rgb(119, 13, 13); /* modifico a cor da borda */
+    background: black; /* modifico a cor do fundo */
+}
+nav{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 90px;
+    left: 400px;
+}
+nav a{
+    margin: 20px;
+    }
+.verde{
+    color: green;
+}
+.vermelho{
+    color: red;
+}
