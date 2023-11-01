@@ -63,3 +63,15 @@ nav a{
 .vermelho{
     color: red;/* aqui eu ponho a cor da resposta errrada */
 }
+main{
+    background-color: rgb(179, 202, 202);
+}
+img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width:  100;
+    position: absolute;
+}
+
