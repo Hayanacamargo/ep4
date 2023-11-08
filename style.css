@@ -1,12 +1,12 @@
 body{
-    background-color: rgb(243, 239, 239);
+    background-color: rgb(174, 174, 245);
     grid-gap: 5px;
     display: grid;
     grid-template-areas: 
         "cab cab cab"
-        "sec pri pri"
+        "pri pri pri"
         "rod rod rod";
-    grid-template-columns: 20% auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto 1000px auto;
 }
 header{
@@ -65,35 +65,54 @@ nav a{
 }
 
 img{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    width:  100;
-    position: absolute;
+    justify-content: center;/* arrumar a posicao da imagem */
+    align-items: center;/* arrumar a posicao da imagem */
+    display: flex;/* arrumar a posicao da imagem */
+    flex-wrap: wrap;/* arrumar a posicao da imagem */
+    width:  100;/* arrumar a posicao da imagem */
+    
 }
 .container {
-    text-align: center;
+    text-align: center;/* arrumar a posicao  */
   }
   
   #getulioImage {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    cursor: pointer;
+    width: 300px;/* arrumar a posicao da imagem */
+    height: 300px;/* arrumar a posicao da imagem */
+    border-radius: 50%;/* arrumar a posicao da imagem */
+    cursor: pointer;/* arrumar a posicao da imagem */
   }
   
   #getulioText {
     display: none;
   }
   p{
-    font-size: 20px;
+    font-size: 20px;/* mudar o tamanho das letras */
    
 }
  img{
     width: 200px;/* aqui eu modifico apenas a posicao da imagem do header*/
     height: auto;
 }
+img {
+    width: 25%;
+    margin: auto;
+    display: block;
+    }
+p{
+    width: 50%;
+    margin: auto;
+    display: block;
 
+}
+h2{
+    width: 50%;
+    margin: auto;
+    display: block;
+    color: rgb(36, 65, 55);
 
+}
+main{
+    background-color: rgb(174, 174, 245);
+}
 
